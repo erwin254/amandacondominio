@@ -83,6 +83,14 @@ body
     margin-top: 1em;
     font-weight: bold;
 }
+
+.video-principal
+{
+    height: 600px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
 .link-menu
 {
 	display: inline-block;
@@ -159,3 +167,4 @@ body
     .bg-title{ margin: 0 1em 0 1em;  padding: 4px 1em; }
     .ctn-content{ margin: 2em; }
 }
+
