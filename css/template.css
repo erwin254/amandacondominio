@@ -140,6 +140,8 @@ body
 .circle{width: 145px ; height: 145px; background-color: #555555; border-radius: 50%;}
 .nav-list a {text-decoration: none !important; color: white;}
 .img-full{width: 100%;}
+.circle-uf{text-align: center; color:white; font-style: italic; font-size: 2em; font-weight: bold;}
+
 #imagenes-exteriores
 {
 	height: 400px;
