@@ -1,0 +1,60 @@
+@font-face {
+   font-family: Lato-regular;
+   font-style: normal;
+   font-weight: normal;
+   src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+   font-family: Lato-airline;
+   font-style: normal;
+   font-weight: normal;
+   src: url(../fonts/Lato-Hairline.ttf);
+}
+
+.footer
+{
+	height: 33em;
+	color:white;
+}
+
+.redes-link
+{
+	display: inline-block;
+	vertical-align: top;
+	width: 60px;
+	height: 60px;
+	margin-top: 3em;
+	margin-left: 3em;
+    margin-right: 3em;
+
+}
+.center-redes
+{
+	width: 100%;
+	text-align: center;
+	border-radius: 2em;
+	background: black;
+	display: inline-block;
+	padding-bottom: 2em;
+}
+.f-logo
+{
+	margin: auto;
+	background: url(../img/f-logo.png);
+	height: 127px;
+	width: 415px;
+}
+.f-leyenda
+{
+	font-family: Lato-regular;
+	text-align: center;
+    margin-top: 7em;
+}
+.text-hairline
+{
+	font-family: Lato-hairline;
+	margin-top: 1em;
+    letter-spacing: 0.5em;
+    font-size: 1.5em;
+}
