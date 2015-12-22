@@ -318,6 +318,13 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+        $(window).bind('scroll', function () {
+        if ($(window).scrollTop() > 400) {
+            $('.menu-main').addClass('fixed-menu');
+        } else {
+            $('.menu-main').removeClass('fixed-menu');
+        }
+    });
     </script>
   </body>
 </html>
