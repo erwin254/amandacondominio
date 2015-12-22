@@ -1,16 +1,3 @@
-@font-face {
-   font-family: Lato-regular;
-   font-style: normal;
-   font-weight: normal;
-   src: url(../fonts/Lato-Regular.ttf);
-}
-
-@font-face {
-   font-family: Lato-airline;
-   font-style: normal;
-   font-weight: normal;
-   src: url(../fonts/Lato-Hairline.ttf);
-}
 
 .footer
 {
