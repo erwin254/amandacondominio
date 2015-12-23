@@ -18,7 +18,7 @@ $(window).bind('scroll', function () {
 
 $(document).ready(function(){
     /* Configuración carrusel*/
-    $('.carousel').slick({
+    $('.slider-int , .slider-ext').slick({
         infinite: true,
         slidesToShow:3,
         slidesToScroll:1,

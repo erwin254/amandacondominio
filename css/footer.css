@@ -1,7 +1,7 @@
 
 .footer
 {
-	height: 33em;
+	height: 460px;
 	color:white;
 }
 
@@ -27,16 +27,17 @@
 }
 .f-logo
 {
-	margin: auto;
-	background: url(../img/f-logo.png);
-	height: 127px;
-	width: 415px;
+	margin: 0 auto;
+	background: url(../img/f-logo.png) no-repeat 50% ;
+	height: 140px;
+    
+	/*width: 450px;*/
 }
 .f-leyenda
 {
 	font-family: Lato-regular;
 	text-align: center;
-    margin-top: 7em;
+    margin-top: 6em;
 }
 .text-hairline
 {

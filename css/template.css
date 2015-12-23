@@ -19,6 +19,13 @@
    src: url(../fonts/Lato-Light.ttf);
 }
 
+@font-face {
+   font-family: Lato-black;
+   font-style: normal;
+   font-weight: normal;
+   src: url(../fonts/Lato-Black.ttf);
+}
+
 
 body
 {
@@ -86,7 +93,7 @@ body
 
 .video-principal
 {
-    height: 600px;
+    height: 520px;
     margin-top: 3em;
     margin-bottom: 3em;
 }
@@ -132,9 +139,12 @@ body
     color: #555555!important;
     font-size: 30pt!important;
 }
-.carousel {text-align: center;}
+.slider-int, slider-ext {text-align: center;}
 
-.carousel img{width: 100%;height: 100%; padding: 1.5em;}
+.ubicacion .descripcion{display:table; height:500px;}
+
+.slider-ext img{width: 100%;height: 100%; padding: 1.5em;}
+.slider-int img{width: 100%;height: 100%; padding: 1.5em;}
 
 .title-2{ font-size: 21pt;}
 
@@ -159,6 +169,7 @@ body
 .title {
     font-size: 20pt;
     color: white;
+    font-family: lato-black;
     
 }
 .bg-title{
@@ -168,7 +179,30 @@ body
 /**contenedor contenido*/
 .ctn-content{ margin: 2em 4em; }
 /**footer*/
-.footer{ background: #202020; height: 400px; width: 100%;   margin-top: 3em;}
+.footer{ background: #202020; width: 100%;   margin-top: 3em;}
+
+@media only screen 
+  and (max-width: 992px)
+{  
+    .ubicacion .descripcion{ height:100%; margin-top: 2em;}
+    .center-vertical{ padding-left: 20px!important;}
+    .ctn-content ul{padding-left: 10px!important;}
+    .text-informacion{padding: 1em 3em 1em 3em;}
+     .footer{height: 470px!important;}
+     .text-slider {display:none;}
+     .video-principal{height: 400px!important;}
+    
+}
+@media only screen 
+  and (max-width: 768px)
+{  
+    .ctn-content ul{padding: 0px!important; margin-bottom: 0px!important;}
+    .title-2{margin-top: 2em;}
+     .footer{height: 490px!important;}
+    .leyend-slider1{display:none;}
+    .video-principal{height: 380px!important;}
+    
+}
 
 /**Smartphones y resoluciones pequeñas*/
 @media only screen 
@@ -177,7 +211,16 @@ body
 {  
     .bg-title{ margin: 0 1em 0 1em;  padding: 4px 1em; }
     .ctn-content{ margin: 2em; }
+    .ubicacion .descripcion{ height:100%; margin-top: 2em;}
+    .footer{height: 600px!important;}
+    .f-leyenda{margin-top: 3em!important;}
+    #googleMap{height: 350px!important;}
+    .video-principal{height: 240px!important;}
+   
+   
+    
 }
+
 
 .fixed-menu{
     top: 0;
