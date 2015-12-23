@@ -13,19 +13,10 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/template.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!--carrusel -->  
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
     <script src="http://maps.googleapis.com/maps/api/js"></script>
-      <script>
-          function initialize() {
-            var mapProp = {
-                center:new google.maps.LatLng(-37.8019602,-72.7152184),
-                zoom:15,
-                mapTypeId:google.maps.MapTypeId.ROADMAP
-              };
-            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-          }
-          google.maps.event.addDomListener(window, 'load', initialize);
-      </script>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -123,6 +114,18 @@
             <div class=" bg-title title">
                 Imágenes Interior
             </div>
+            <div class="ctn-content">   
+                <div class="center carousel">  
+                    <div><img src="img/01%20LIVING%20CASA%20A.jpg" alt=""></img></div>
+                    <div><img src="img/02%20BA%C3%91O%20DORMITORIO%20CASA%20A.jpg" alt=""></img></div>
+                    <div><img src="img/03%20COCINA%20CASA%20A.jpg" alt=""></img></div>
+                    <div><img src="img/04%20ESTAR%20CASA%20A.jpg" alt=""></img></div>
+                    <div><img src="img/05%20LIVING%20CASA%20B.jpg" alt=""></img></div>
+                    <div><img src="img/06%20COCINA%20CASA%20B.jpg" alt=""></img></div>
+                    <div><img src="img/07%20ESTAR%20CASA%20B.jpg" alt=""></img></div>
+                    <div><img src="img/08%20DORMITORIO%20CASA%20B%20.jpg" alt=""></img></div>
+                </div>
+            </div>
  			
  		</div>
 
@@ -130,6 +133,17 @@
  			<div class="bg-title title">
                 Imágenes Exterior
             </div>
+            <div class="ctn-content">   
+                <div class="center carousel">  
+                    <div><img src="img/001.jpg" alt=""></img></div>
+                    <div><img src="img/002.jpg" alt=""></img></div>
+                    <div><img src="img/003.jpg" alt=""></img></div>
+                    <div><img src="img/004.jpg" alt=""></img></div>
+                    <div><img src="img/005.jpg" alt=""></img></div>
+                    <div><img src="img/006.jpg" alt=""></img></div>
+                </div>
+            </div>
+
  		</div>
         <div class="row">
         <div id="equipamiento-caracteristicas" class="col-md-12 bg-ctn">
@@ -363,33 +377,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(window).bind('scroll', function () {
-        if ($(window).scrollTop() > 400) {
-            $('.menu-main').addClass('fixed-menu');
-        } else {
-            $('.menu-main').removeClass('fixed-menu');
-        }
-    });
+    <script type="text/javascript" src="js/slick/slick.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
-    $(document).ready(function() {
-        var mover = 50;
-        $('ul.navigation').on('click', 'a', function(e) {       
-            e.preventDefault();
-            console.log(this.innerHTML);
-            if (this.innerHTML == "Inicio")
-            {
-                mover = 0;
-            }
-            else
-            {
-                mover = 50;
-            }
-            $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top - mover
-            }, 800);
-        });
-    });
-    </script>
   </body>
 </html>
