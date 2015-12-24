@@ -27,6 +27,13 @@
 }
 
 
+/* this is only to style the sidebar - you can make the sidebar look any way you want */
+.sidebar {
+  padding: 20px;
+    color: white;
+  background-color: #222222;
+  border-right: 1px solid #555555;
+}
 body
 {
 	background: url(../img/background.jpg);
@@ -139,6 +146,8 @@ body
     color: #555555!important;
     font-size: 30pt!important;
 }
+
+.sidebar-img{height: 40px; margin-top: -10px}
 .slider-int, slider-ext {text-align: center;}
 
 .ubicacion .descripcion{display:table; height:500px;}
@@ -164,6 +173,8 @@ body
 .nav-list a {text-decoration: none !important; color: white;}
 .img-full{width: 100%;}
 .circle-uf{text-align: center; color:white; font-style: italic; font-size: 2em; font-weight: bold;}
+
+.navbar.navbar-static.navbar-inverse.navbar-fixed-top{display: none;}
 
 .pd0{padding: 0px!important;}
 .title {
@@ -191,6 +202,7 @@ body
      .footer{height: 470px!important;}
      .text-slider {display:none;}
      .video-principal{height: 400px!important;}
+    .navbar.navbar-static.navbar-inverse.navbar-fixed-top{display: none;}
     
 }
 @media only screen 
@@ -201,6 +213,9 @@ body
      .footer{height: 490px!important;}
     .leyend-slider1{display:none;}
     .video-principal{height: 380px!important;}
+    .menu-main{display: none;}
+    .navbar.navbar-static.navbar-inverse.navbar-fixed-top{display: block;}
+    body {padding-top: 51px;}
     
 }
 
