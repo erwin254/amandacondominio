@@ -48,14 +48,15 @@ $(document).ready(function(){
     });
     
     var mover = 50;
-    $('ul.navigation').on('click', 'a', function(e) {       
+    $('ul.navigation, .sidebar-left').on('click', 'a', function(e) {       
         e.preventDefault();
         console.log(this.innerHTML);
         if (this.innerHTML == "Inicio")
             mover = 0;
         else
             mover = 50;
-
+        
+        $('.sidebar-left').removeClass('sidebar-open');
         $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top - mover
         }, 800);
