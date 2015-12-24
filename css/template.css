@@ -242,7 +242,7 @@ body
     .ctn-content{ margin: 2em; }
     .ubicacion .descripcion{ height:100%; margin-top: 2em;}
      .ubicacion .descripcion li{ font-size: 12pt;}
-    .footer{height: 600px!important;}
+    /*.footer{height: 600px!important;}*/
     .f-leyenda{margin-top: 3em!important;}
     #googleMap{height: 350px!important;}
     .video-principal{height: 240px!important;}
